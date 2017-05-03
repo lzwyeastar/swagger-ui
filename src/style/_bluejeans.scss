@@ -1,0 +1,116 @@
+/*
+  BlueJeans Corporate Look and Feel graphics styles
+  
+  These constants follow the corporate color styling as defined in BlueJeans' Style Guide:
+  http://brand.bluejeans.com
+
+*/
+
+$denim      : #1478c7;
+$pictonBlue : #12abf1;
+
+$silkRoad   : #3ac97a;
+$sunBeam    : #ffc43d;
+$rogue      : #ef476f;
+$winterFresh : #dde4ee;
+$haiti      : #204e74;
+
+$gradColor1 : #006FD2;
+$gradColor2 : #088ED6;
+$gradColor3 : #1AD1E0;
+
+
+.info {
+  max-width: 1400px;
+}
+
+.scheme-container {
+   margin-left: 10px;
+
+  background: $winterFresh; // For browsers that do not support gradients
+  // Safari 5.1 to 6.0
+  background: -webkit-linear-gradient( $winterFresh, white);
+  // Opera 11.1 to 12.0
+  background: -o-linear-gradient( $winterFresh, white);
+  background: -moz-linear-gradient( $winterFresh, white);
+  // Standard syntax
+  background: repeating-linear-gradient( $winterFresh, white);
+}
+
+
+/*
+$bjnGrad : {
+  background: $denim; 
+  // Safari 5.1 to 6.0 
+  background: -webkit-linear-gradient($gradColor1, $gradColor2 44%, $gradColor3);
+  // Opera 11.1 to 12.0/
+  background: -o-linear-gradient($gradColor1, $gradColor2 44%, $gradColor3);
+  // Firefox 3.6 to 15 
+  background: -moz-linear-gradient($gradColor1, $gradColor2 44%, $gradColor3);
+  // Standard syntax 
+  background: repeating-linear-gradient($gradColor1, $gradColor2 44%, $gradColor3);
+}
+*/
+
+.swagger-ui {
+
+  .btn{
+     border-radius: 20px;
+  }
+
+
+}
+
+
+//
+// This is the Swagger top menu bar area where you can enter the YAML file
+//
+.topbar
+{
+  background: $denim; // For browsers that do not support gradients
+  // Safari 5.1 to 6.0
+  background: -webkit-linear-gradient(154deg, $gradColor1, $gradColor2 44%, $gradColor3);
+  // Opera 11.1 to 12.0
+  background: -o-linear-gradient(154deg, $gradColor1, $gradColor2 44%, $gradColor3);
+  // Firefox 3.6 to 15
+  background: -moz-linear-gradient(154deg, $gradColor1, $gradColor2 44%, $gradColor3);
+  // Standard syntax
+  background: repeating-linear-gradient(154deg, $gradColor1, $gradColor2 44%, $gradColor3);
+
+  // This is  the "Explore" button
+  .download-url-wrapper
+  {
+		.download-url-button
+		{
+			background-color: $denim;
+			border-radius: 4px;
+			margin-left: 10px;
+		}
+		.download-url-button:hover{
+		    background-color: $haiti;
+		}
+  }
+	
+}
+
+
+// These handle components of the Authorization UI and Flow
+//
+
+.btn.authorize{
+   background-color: white;;
+}
+
+.btn.authorize:hover{
+   background-color: #b3efd5;
+}
+// The titlebar of the pop-up Authorization dialog
+.modal-ux-header{
+   background-color: rgba(18,171,251,0.1);
+}
+
+// In the API calls, the "Try it out" button which calls API 
+.btn.try-out__btn:hover{
+   background-color: #8e8686;
+   color: $winterFresh;
+}

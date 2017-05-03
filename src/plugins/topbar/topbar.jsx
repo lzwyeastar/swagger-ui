@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react"
 
 //import "./topbar.less"
-import Logo from "./logo_small.png"
+import Logo from "../../img/BlueJeans_camera.png"		// logo_small.png"
 
 export default class Topbar extends React.Component {
 
@@ -39,9 +39,9 @@ export default class Topbar extends React.Component {
         <div className="topbar">
           <div className="wrapper">
             <div className="topbar-wrapper">
-              <Link href="#" title="Swagger UX">
-                <img height="30" width="30" src={ Logo } alt="Swagger UX"/>
-                <span>swagger</span>
+              <Link href="#" title="BlueJeans">
+                <img height="39" width="48" src={ Logo } alt="API Explorer"/>
+                <span>BlueJeans</span>
               </Link>
               <form className="download-url-wrapper" onSubmit={this.downloadUrl}>
                 <input className="download-url-input" type="text" onChange={ this.onUrlChange } value={this.state.url} disabled={isLoading} style={inputStyle} />
